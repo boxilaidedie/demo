@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>开始使用layui</title>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/layui.css">
+  <script src="layui.js"></script>
+  <script src="index.js"></script> 
+</head>	
+<body>
+	<ul>
+		<li>11111111</li>
+		<li>222222</li>
+		<li>33333333</li>
+		<li>44444444444</li>
+		<li>55555555</li>
+	</ul>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$('li').on('click',function(){
+			
+			alert($(this).text());
+		});
+	});
+</script>
+</html>
