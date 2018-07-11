@@ -9,28 +9,169 @@
 	<link rel="stylesheet" href="css/layui.css">
 	<script src="layui.js"></script>
 	<script src="index.js"></script> 
-</head>	
+</head>
+<style type="text/css">
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
+.layui-nav-item-control:hover{   /*控制台*/
+	background-color:;
+}
+.layui-bg-eeeeee{
+	background-color: #f2f2f2;
+}
+.layui-nav-tree .layui-nav-item a{
+	color:#717070
+}
+.layui-nav-item-title{
+	height: 45px;
+	border-bottom:1px solid rgba(0,0,0,0.3);
+}
+.layui-nav-item-title a {
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 45px;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 30px 0 48px;
+</style>
 <body>
-	<div class="layui-hearder">
-
-		<ul class="layui-nav">
-			<div class="layui-container">
-				<div class="layui-col-md4">
-					<li class="layui-nav-item"><a href="">最新活动</a></li>
-					<li class="layui-nav-item"><a href="">最新活动</a></li>
-					<li class="layui-nav-item"><a href="">最新活动</a></li>
-					<li class="layui-nav-item"><a href="">最新活动</a></li>
-				</div>
-				
+	<div class="layui-layout layui-layout-admin">
+		<div class="layui-header layui-bg-cyan">
+			<div class="layui-logo ">AIUI后台管理系统</div>
+			<ul class="layui-nav layui-layout-right">	
+				<li class="layui-nav-item layui-nav-item-control"><a href="#">控制台<span class="layui-badge layui-bg-orange">1</span></a></li>
+				<li class="layui-nav-item"><a href="#">欢迎：<i>zc</i></a>
+					<dl class="layui-nav-child layui-bg-molv">
+						<dd><a href="#"><i class="layui-icon layui-icon-user" style="font-size: 20px; color: black;margin-right: 10px;"></i>用户中心</a></dd>
+						<dd><a href="#"><i class="layui-icon layui-icon-notice" style="font-size: 20px; color: black;margin-right: 10px;"></i>消息<span class="layui-badge layui-bg-orange">1</span></a></dd>
+						<dd><a href="#"><i class="layui-icon layui-icon-set" style="font-size: 20px; color: black;margin-right: 10px;"></i>设置</a></dd>
+						<dd><a href="#"><i class="layui-icon layui-icon-close" style="font-size: 20px; color: black;margin-right: 10px;"></i>注销</a></dd>
+					</dl>
+				</li>
+				<li class="layui-nav-item"><a href="#">登录/注册</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="layui-layout layui-layout-fluid">
+		<div class="layui-row">
+			<div class="layui-col-md2">
+				<ul class="layui-nav layui-nav-tree layui-bg-eeeeee">
+					<li class="layui-nav-item-title"><a href="#" style="margin-left: 30px">概况</a></li>
+					<li class="layui-nav-item item-nav" id="nav_business"><a href="#"><i class="layui-icon layui-icon-app" style="font-size: 20px; color: black;margin-right: 10px"></i>业务管理</a></li>
+					<li class="layui-nav-item item-nav" id="nav_artcle"><a href="#"><i class="layui-icon layui-icon-edit" style="font-size: 20px; color:  black;margin-right: 10px"></i>文章管理</a></li>
+					<li class="layui-nav-item item-nav" id="nav_picture"><a href="#"><i class="layui-icon layui-icon-picture" style="font-size: 20px; color:  black;margin-right: 10px"></i>  图片管理</a></li>
+					<li class="layui-nav-item item-nav" id="nav_total"><a href="#"><i class="layui-icon layui-icon-chart" style="font-size: 20px; color:  black;margin-right: 10px"></i>  统计管理</a></li>
+				</ul>
 			</div>
-		</ul>
-
-		
+			<div class="layui-col-md10">
+				<div class="layui-tab-tab1">
+					<div class="layui-tab">
+						<ul class="layui-tab-title">
+							<li class="layui-this">网站设置</li>
+							<li>用户管理</li>
+							<li>权限分配</li>
+							<li>商品管理</li>
+							<li>订单管理</li>
+						</ul>
+						<div class="layui-tab-content">
+							<div class="layui-tab-item layui-show">内容1</div>
+							<div class="layui-tab-item">内容2</div>
+							<div class="layui-tab-item">内容3</div>
+							<div class="layui-tab-item">内容4</div>
+							<div class="layui-tab-item">内容5</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="layui-tab-tab2">
+					<div class="layui-tab">
+						<ul class="layui-tab-title">
+							<li class="layui-this">网站设置</li>
+							<li>用户管理</li>
+							<li>权限分配</li>
+							<li>商品管理</li>
+							<li>订单管理</li>
+						</ul>
+						<div class="layui-tab-content">
+							<div class="layui-tab-item layui-show">内容1</div>
+							<div class="layui-tab-item">内容2</div>
+							<div class="layui-tab-item">内容3</div>
+							<div class="layui-tab-item">内容4</div>
+							<div class="layui-tab-item">内容5</div>
+						</div>
+					</div>
+				</div>
+				<div class="layui-tab-tab3">
+					<div class="layui-tab">
+						<ul class="layui-tab-title">
+							<li class="layui-this">网站设置</li>
+							<li>用户管理</li>
+							<li>权限分配</li>
+							<li>商品管理</li>
+							<li>订单管理</li>
+						</ul>
+						<div class="layui-tab-content">
+							<div class="layui-tab-item layui-show">内容1</div>
+							<div class="layui-tab-item">内容2</div>
+							<div class="layui-tab-item">内容3</div>
+							<div class="layui-tab-item">内容4</div>
+							<div class="layui-tab-item">内容5</div>
+						</div>
+					</div>
+				</div>
+				<div class="layui-tab-tab4">
+					<div class="layui-tab">
+						<ul class="layui-tab-title">
+							<li class="layui-this">网站设置</li>
+							<li>用户管理</li>
+							<li>权限分配</li>
+							<li>商品管理</li>
+							<li>订单管理</li>
+						</ul>
+						<div class="layui-tab-content">
+							<div class="layui-tab-item layui-show">内容1</div>
+							<div class="layui-tab-item">内容2</div>
+							<div class="layui-tab-item">内容3</div>
+							<div class="layui-tab-item">内容4</div>
+							<div class="layui-tab-item">内容5</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 <script type="text/javascript">
-	layui.use('element',function(){
-		var element = layui.element;
-	});
+	window.onload=function(){
+		layui.use('element',callback);
+		var callback=function(){
+			var element=layui.element;
+		};
+		initNav();
+		$('item-nav').on('click',function(){
+			var id=$(this).attr('id');
+			if(id=='nav_business'){
+				$('.layui-tab-tab1').addClass('show').siblings().addClass('hide');
+			}else if(id=='nav_artcle'){
+				$('.layui-tab-tab2').addClass('show').siblings().addClass('hide');
+			}else if(id=='nav_picture'){
+				$('.layui-tab-tab3').addClass('show').siblings().addClass('hide');
+			}else if(id=='nav_total'){
+				$('.layui-tab-tab4').addClass('show').siblings().addClass('hide');
+			}
+		});
+
+		function initNav(){
+			$('.layui-tab-tab1').addClass('show');
+			$('.layui-tab-tab2').addClass('hide');
+			$('.layui-tab-tab3').addClass('hide');
+			$('.layui-tab-tab4').addClass('hide');
+
+		};
+	};
 </script>
 </html>
